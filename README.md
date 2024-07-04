@@ -1,8 +1,37 @@
-# React + Vite
+## Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ChefPal** is a simple todo demo application built with `react`. It helps users to get recipes of verious foods so they can be their own chef, their own way. Each recipe comes with useful information like **estimation of cost, ingredients, cooking instructions, and more.*
 
-Currently, two official plugins are available:
+It holds not many features, but promises to be improved upon as time goes on, consolidating on knowledge growth in React, Javascript and other technologies, as the case may be.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Data is persited to browser local storage at the beginning, pending when the database persistence would be rolled out.
+
+---
+## Features
+### Implemented
+
+
+
+### Pending
+- User login and authentication
+- Settings
+  - Appearance
+    - Themes/Colours
+    - Font size and style
+- Reports and Charts
+- Social media integration
+
+
+## Technologies
+- React.js
+- HTML
+- CSS
+
+## View
+To take a look, click [here](https://google.com).
+
+
+## Author
+#### William Inyam ####
+     - [Github](https://github.com/thecypherzen/)
+     - [Twitter/X](https://x.com/williamInyam)
