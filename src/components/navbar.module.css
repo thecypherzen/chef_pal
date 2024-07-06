@@ -1,0 +1,59 @@
+.main-nav {
+    height: 12vh;
+    background: var(--color-white);
+    box-shadow: 0 5px 10px #1D201F1E;
+    padding-inline: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.branding {
+    margin-right: auto;
+    height: 80%;
+    width: 170px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-inline: 5px;
+}
+
+.menu {
+    margin-right: 0px;
+    padding: 10px 20px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+.menu:hover { color: var(--color-secondary); }
+
+.logo {
+    background: url('../assets/logo.png') no-repeat left center/contain;
+    background-color: transparent;
+    height: 100%;
+    width: 25%;
+    margin-right: 10px;
+    transition: background var(--speed-short) linear;
+}
+
+.branding-text {
+    color: var(--color-primary-dark);
+    font-weight: 700;
+    font-size: clamp(24px, 3rem, 4rem);
+    margin: auto;
+    transition: all var(--speed-short) ease-in;
+}
+
+.b-text-light {
+    color: var(--color-secondary);
+    transition: all 0.5s ease-in;
+}
+
+.branding:hover {
+    .branding-text { color: var(--color-secondary); }
+    .b-text-light { color: var(--color-primary); }
+    .logo {
+	background: url('../assets/logo_purple.png') no-repeat
+		       left center/contain;
+    }
+}

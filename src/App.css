@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap');
+
 :root{
     --color-black: #1D201F;
+    --color-black-light: #606262;
+    --color-grey: #d1d2d2;
     --color-white: #FEFEFE;
     --color-light: #E6FDFF;
     --color-primary: #422147;
@@ -13,14 +17,16 @@
     --color-accent-dark: #B1312A;
     --color-success: var(--color-secondary);
     --color-danger: var(--color-accent);
+    --speed-short: 0.5s;
 
-    font-family: Inter, system-ui, sans-serif;
+    font-family: "Inter Tight", system-ui, sans-serif;
     font-size: 10px;
     font-weight: 400px;
     line-height: 1.5;
-    color-scheme: light dark;
-    background-color: var(--color-black);
-    color: var(--color-white);
+    color-scheme: light;
+    background-color: var(--color-light);
+    /* background-color: var(--color-black); */
+    /* color: var(--color-white); */
 }
 
 *{
@@ -32,6 +38,31 @@
 body{
     font-size: 1.8rem;
 }
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+button, .btn {
+    outline: none;
+    color: var(--color-light);
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-rounded {
+    border-radius: 0.5rem;
+}
+
+.container{
+    max-width: clamp(248px, 80vw, 960px);
+    margin: auto;
+}
+
+
 
 @media (prefers-color-scheme: light) {
     :root{
