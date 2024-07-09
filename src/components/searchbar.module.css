@@ -1,6 +1,6 @@
 #search-bar {
     margin-top: 10vh;
-    width: clamp(180px, 300px, 40vw);
+    width: clamp(250px, 400px, 60vw);
     margin-inline: auto;
     display: flex;
     border-bottom: 1px solid var(--color-secondary);
@@ -26,4 +26,19 @@
 
 input#query {
     width: inherit;
+}
+
+@media (max-width:400px) {
+    #search-bar {
+	flex-direction: column;
+	justify-content:center;
+	text-align: center;
+	border: none;
+    }
+    #search-bar > input { text-align: center;}
+    #search-bar > label {
+	order: 2;
+	border-top: 1px solid var(--color-secondary);
+	padding-block: 2px;
+    }
 }

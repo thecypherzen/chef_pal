@@ -1,0 +1,15 @@
+.detailsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    max-width: clamp(248px, 80vw, 960px);
+    border: 1px var(--color-black-light) solid;
+    margin:auto;
+    margin-top: 1rem;
+}
+
+@media (max-width: 480px) {
+    .detailsContainer {
+	grid-template-columns: 1fr;
+    }
+}
