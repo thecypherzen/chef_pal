@@ -2,7 +2,7 @@ import '../App.css'
 import styles from './searchbar.module.css'
 import { useState, useEffect } from 'react'
 
-export default function SearchBar({ setData, setLoading }) {
+export default function SearchBar({ setData, setLoading, setError }) {
     const tag = "search...";
     const [query, setQuery] = useState("chicken");
     const uri = 'https://api.spoonacular.com/recipes/complexSearch/';
@@ -13,11 +13,16 @@ export default function SearchBar({ setData, setLoading }) {
     }
 
     useEffect(() => {
+	console.log("searchbar useffect called..");
 	async function getRecipes(){
+	    console.log("get recipes called... ");
 	    const req = await fetch(`${uri}?query=${ query }`, {
 		headers: hdrs
 	    });
 	    const res = await req.json();
+	    if ((res?.code ?? 200) !== 200){
+		setError(res);
+	    }
 	    setData(res.results);
 	    setLoading(false);
 	}

@@ -1,0 +1,22 @@
+.errorMessage {
+    width: clamp(50vw, 500px, 80vw);
+    background: var(--color-danger);
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin: auto;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    color: var(--color-white);
+}
+
+.heading {
+    font-weight: 500px;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 1px var(--color-white) solid;
+}
+
+.subject {
+    font-weight: bold;
+}
