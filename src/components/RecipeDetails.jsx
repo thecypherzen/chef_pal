@@ -10,13 +10,11 @@ export default function RecipeDetails({ itemId, isLoading }){
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-	console.log("recipe details useffect called...");
 	const url = 'https://api.spoonacular.com/recipes/' +
 	      `${itemId}/information`;
 	const hdrs = {"x-api-key": "5a22f1ee68c048f189a01b36a6440f22"}
 
 	async function getDetails(){
-	    console.log("getDetails called ...");
 	    const req = await fetch(url, {headers: hdrs});
 	    const res = await req.json();
 	    setInfo(res);
