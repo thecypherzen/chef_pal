@@ -6,10 +6,13 @@ It holds not many features, but promises to be improved upon as time goes on, co
 
 Data is persited to browser local storage at the beginning, pending when the database persistence would be rolled out.
 
+## Preview ###
+[Click here](https://chef-pal.onrender.com) to view.
+
 ---
 ## Features
 ### Implemented
-
+- Meal search by ingredients
 
 
 ### Pending
